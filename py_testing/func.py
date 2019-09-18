@@ -4,6 +4,11 @@ this docstring line just needs to exceed 120 characters so to fail the pep8 veri
 import calendar
 import datetime
 
+CONST_UPPER = "CONSTANT"
+const_lower = "constant"
+constCamel = "constAnt"
+ConstPascal = "ConstAnt"
+
 
 def bom(the_date: datetime.date) -> datetime.date:
     return the_date.replace(day=1)
@@ -27,3 +32,36 @@ def failure() -> None:
     :return: an object of datatype other than expected mypy type
     """
     return 1
+
+
+def invalidFunctionName():
+    """
+
+    :return:
+    """
+    return
+
+
+class ValidClassName:
+    """Non-empty class docstring"""
+    X = 'mystring'
+
+    def test_1(self):
+        """
+
+        :return:
+        """
+        return self.X
+
+    def test_2(self):
+        """
+
+        :return:
+        """
+        return f"{self.test_1()} again"
+
+
+# TODO: verify in linting results
+class inValidClassName(ValidClassName):
+    """"""
+    pass
