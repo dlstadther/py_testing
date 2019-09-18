@@ -40,5 +40,7 @@ $ tox -e py37,pylint
         * add fixtures
         * add config `.ini`s
     * static testing / linting
-        * add config `.ini`s
-        * add custom rules
+        * add custom rules [example](https://github.com/PyCQA/pylint/blob/master/pylint/extensions/emptystring.py)
+* support single function execution
+* run tests inside docker
+* setup within TravisCI
