@@ -34,7 +34,6 @@ $ tox -e py37,pylint
 ```
 
 ## TODO
-* add coverage calculation
 * increase complexity of tests
     * unit testing
         * add fixtures

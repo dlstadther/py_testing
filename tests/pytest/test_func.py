@@ -33,10 +33,3 @@ def test_eom(in_date, expected_date):
     :param expected_date: expected output to func
     """
     assert eom(in_date) == expected_date
-
-
-def test_fail():
-    """
-    Test expected to fail
-    """
-    assert 0 == 1
