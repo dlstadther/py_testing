@@ -35,10 +35,7 @@ def failure() -> None:
 
 
 def invalidFunctionName():
-    """
-
-    :return:
-    """
+    # pylint: disable=C0111
     return
 
 
