@@ -11,6 +11,11 @@ ConstPascal = "ConstAnt"
 
 
 def bom(the_date: datetime.date) -> datetime.date:
+    """
+    Return the first day of the month for a provided date
+    :param the_date: datetime.date
+    :return: first day of month for `the_date`
+    """
     return the_date.replace(day=1)
 
 
@@ -45,15 +50,15 @@ class ValidClassName:
 
     def test_1(self):
         """
-
-        :return:
+        Test 1
+        :return: class attribute `X`
         """
         return self.X
 
     def test_2(self):
         """
-
-        :return:
+        Test 2
+        :return: string which includes the result of `test_1()`
         """
         return f"{self.test_1()} again"
 
