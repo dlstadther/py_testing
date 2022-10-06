@@ -7,3 +7,6 @@ docs-build:
 
 docs-html: docs-build
 	cd docs && make clean html && cd ..
+
+docs-open:
+	open ./docs/_build/html/index.html
